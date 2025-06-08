@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FM PARFUM - Eleganza in ogni goccia</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <header>
+        <h1>FM PARFUM</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#prodotti">Prodotti</a>
+        <a href="#cart">Carrello</a>
+        <a href="#contatti">Contatti</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Eleganza in ogni goccia</h2>
+    </section>
+
+    <section class="products" id="prodotti">
+        <div class="product-card">
+            <img src="https://source.unsplash.com/300x300/?perfume,bottle" alt="Profumo 1">
+            <h3>FM No. 1</h3>
+            <p class="price">€89.00</p>
+            <button onclick="addToCart('FM No. 1', 89.00)">Aggiungi al carrello</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://source.unsplash.com/300x300/?perfume,luxury" alt="Profumo 2">
+            <h3>FM No. 2</h3>
+            <p class="price">€109.00</p>
+            <button onclick="addToCart('FM No. 2', 109.00)">Aggiungi al carrello</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://source.unsplash.com/300x300/?cosmetics,skincare" alt="Crema viso">
+            <h3>Crema Viso Premium</h3>
+            <p class="price">€59.00</p>
+            <button onclick="addToCart('Crema Viso Premium', 59.00)">Aggiungi al carrello</button>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Il tuo carrello</h2>
+        <ul id="cart-items">
+            <li>Il carrello è vuoto.</li>
+        </ul>
+    </section>
+
+    <section id="contatti">
+        <h2>Contattaci</h2>
+        <p>Email: info@fmparfum.it</p>
+        <p>Telefono: +39 012 3456789</p>
+        <p>Instagram: @fmparfum</p>
+    </section>
+
+    <footer>
+        &copy; 2025 FM PARFUM | Tutti i diritti riservati
+    </footer>
+
+    <script src="js/cart.js"></script>
+
+</body>
+</html>
